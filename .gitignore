@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# additionally hide on purpose
+.package.json
+.tsconfig.json
+.yarn.lock
+
