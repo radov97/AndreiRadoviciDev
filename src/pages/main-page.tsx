@@ -6,6 +6,9 @@ const MainPage = (): JSX.Element => {
     font-size: 1.5em;
     text-align: center;
     color: palevioletred;
+    &:hover {
+      background: green;
+    }
   `;
 
   const css = {
@@ -15,6 +18,9 @@ const MainPage = (): JSX.Element => {
   const css2 = {
     color: "white",
     backgroundColor: "red",
+    "&:hover": {
+      backgroundColor: "yellow",
+    },
   };
 
   const Test = styled.p(css, css2);
@@ -26,7 +32,7 @@ const MainPage = (): JSX.Element => {
 
   return (
     <Wrapper>
-      <Title onClick={() => console.log("test")}>
+      <Title onClick={() => alert("test")}>
         Hello World, this is my first styled component!
       </Title>
       <Test>Trying to test a paragraph here 2</Test>
