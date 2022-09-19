@@ -1,43 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC, useContext } from "react";
+import { ResponsiveContext } from "../general/context";
 
-const MainPage = (): JSX.Element => {
-  const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: palevioletred;
-    &:hover {
-      background: green;
-    }
-  `;
+const MainPage: FC = (): JSX.Element => {
+  const { isBigScreen, isTabletOrMobile } = useContext(ResponsiveContext);
 
-  const css = {
-    fontSize: "15px",
-  };
+  console.log("isBigScreen", isBigScreen, "isTabletOrMobile", isTabletOrMobile);
 
-  const css2 = {
-    color: "white",
-    backgroundColor: "red",
-    "&:hover": {
-      backgroundColor: "yellow",
-    },
-  };
-
-  const Test = styled.p(css, css2);
-
-  const Wrapper = styled.section`
-    padding: 4em;
-    background: papayawhip;
-  `;
-
-  return (
-    <Wrapper>
-      <Title onClick={() => alert("test")}>
-        Hello World, this is my first styled component!
-      </Title>
-      <Test>Trying to test a paragraph here 2</Test>
-    </Wrapper>
-  );
+  return <div>Hello World, this is my first styled component!</div>;
 };
 
 export default MainPage;
