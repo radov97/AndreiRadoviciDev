@@ -11,6 +11,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "g": "^2.0.1",
+    "inline-style-prefixer": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-responsive": "^9.0.0",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@types/inline-style-prefixer": "^5.0.0",
     "@types/styled-components": "^5.1.26"
   }
 }
