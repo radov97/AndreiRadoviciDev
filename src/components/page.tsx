@@ -8,10 +8,12 @@ const Page: FC<IChildrenProp> = ({ children }): JSX.Element => {
 
   console.log("isBigScreen", isBigScreen, "isTabletOrMobile", isTabletOrMobile);
 
+  // Create header and footer component
+
   return (
     <Container>
       <div>Header</div>
-      <div>{children}</div>
+      {children}
       <div>Footer</div>
     </Container>
   );

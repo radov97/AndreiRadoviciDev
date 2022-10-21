@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { lightBlue } from "./vars";
 
 const Container = styled.div({
-  backgroundColor: "red",
+  backgroundColor: lightBlue,
   display: "flex",
   color: "white",
   flexDirection: "column",
