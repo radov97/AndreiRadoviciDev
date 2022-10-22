@@ -7,6 +7,7 @@ import {
   FooterDiv,
   BodyDiv,
 } from "../styles/page-style";
+import Footer from "./footer";
 import Navbar from "./navbar";
 
 const Page: FC<IChildrenProp> = ({ children }): JSX.Element => (
@@ -16,7 +17,9 @@ const Page: FC<IChildrenProp> = ({ children }): JSX.Element => (
     </NavbarDiv>
     <BodyDiv>
       <ChildrenDiv>{children}</ChildrenDiv>
-      <FooterDiv>Footer</FooterDiv>
+      <FooterDiv>
+        <Footer />
+      </FooterDiv>
     </BodyDiv>
   </Container>
 );

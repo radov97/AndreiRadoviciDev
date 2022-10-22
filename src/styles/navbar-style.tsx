@@ -20,14 +20,14 @@ const IconBtn = styled.button({
   padding: "6px 18px",
   color: White,
   fontSize: "30px",
-  backgroundColor: "#5b0b12",
+  backgroundColor: ImperialRed,
   transition: "all .3s",
   filter: "none",
   "&:hover": {
-    filter: "brightness(200%)",
+    filter: "brightness(80%)",
   },
   "&:active": {
-    filter: "invert(100%)",
+    filter: "invert(80%)",
   },
 });
 
@@ -47,16 +47,18 @@ const ButtonNav = styled.button({
   border: "none",
   padding: "6px 18px",
   color: White,
+  letterSpacing: "0.7px",
   fontSize: "30px",
-  backgroundColor: "#5b0b12",
+  backgroundColor: ImperialRed,
+  fontWeight: "bold",
   transition: "all .3s",
   filter: "none",
   "&:hover": {
-    filter: "brightness(200%)",
+    filter: "brightness(80%)",
     padding: "6px 40px",
   },
   "&:active": {
-    filter: "invert(100%)",
+    filter: "invert(80%)",
   },
 });
 
@@ -94,7 +96,7 @@ const MenuButton = styled.div({
   padding: "6px 18px",
   color: White,
   fontSize: "30px",
-  backgroundColor: "#5b0b12",
+  backgroundColor: ImperialRed,
   transition: "all .3s",
   filter: "none",
   height: "50px",
