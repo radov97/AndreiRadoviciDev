@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import { lightBlue } from "./vars";
+import { CeladonBlue, White } from "./vars";
 
 const Container = styled.div({
-  backgroundColor: lightBlue,
   display: "flex",
-  color: "white",
   flexDirection: "column",
   width: "100vw",
   height: "100vh",
@@ -17,13 +15,14 @@ const NavbarDiv = styled.div({
 const BodyDiv = styled.div({
   flexGrow: "1",
   overflow: "auto",
-  backgroundColor: "green",
   display: "flex",
   flexDirection: "column",
 });
 
 const ChildrenDiv = styled.div({
   flexGrow: "1",
+  backgroundColor: CeladonBlue,
+  color: White,
 });
 
 const FooterDiv = styled.div({

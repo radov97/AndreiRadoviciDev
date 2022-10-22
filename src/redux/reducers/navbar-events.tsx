@@ -6,6 +6,8 @@ const navbarReducer = (
   action: INavbarReducerAction
 ): NavbarEvents => {
   switch (action.type) {
+    case "HOME":
+      return "HOME";
     case "WORK-EXPERIENCE":
       return "WORK-EXPERIENCE";
     case "EDUCATION":
