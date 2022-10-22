@@ -9,7 +9,7 @@ const Container = styled.div({
   backgroundColor: ImperialRed,
 });
 
-const HomeBtn = styled.button({
+const IconBtn = styled.button({
   flexGrow: "0",
   height: "100%",
   background: "none",
@@ -53,11 +53,68 @@ const ButtonNav = styled.button({
   filter: "none",
   "&:hover": {
     filter: "brightness(200%)",
-    padding: "6px 40px"
+    padding: "6px 40px",
   },
   "&:active": {
     filter: "invert(100%)",
   },
 });
 
-export { Container, HomeBtn, NavigationSection, ButtonNav };
+const ContainerMobile = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  height: "auto",
+  minHeight: "50px",
+  backgroundColor: ImperialRed,
+  transition: "all .3s",
+});
+
+const HomeBurgerLine = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  height: "50px",
+});
+
+const MobileMenu = styled.div({
+  height: "200px",
+  backgroundColor: ImperialRed,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "flex",
+  alignItems: "flex-end",
+});
+
+const MenuButton = styled.div({
+  background: "none",
+  font: "inherit",
+  cursor: "pointer",
+  outline: "inherit",
+  border: "none",
+  padding: "6px 18px",
+  color: White,
+  fontSize: "30px",
+  backgroundColor: "#5b0b12",
+  transition: "all .3s",
+  filter: "none",
+  height: "50px",
+  width: "230px",
+  textAlign: "right",
+  "&:hover": {
+    filter: "brightness(200%)",
+  },
+  "&:active": {
+    filter: "invert(100%)",
+  },
+});
+
+export {
+  Container,
+  IconBtn,
+  NavigationSection,
+  ButtonNav,
+  ContainerMobile,
+  HomeBurgerLine,
+  MobileMenu,
+  MenuButton,
+};

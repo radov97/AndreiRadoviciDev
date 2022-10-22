@@ -1,4 +1,4 @@
-import { FC, useContext } from "react";
+import { FC, useContext, useState } from "react";
 import { useDispatch } from "react-redux";
 import { ResponsiveContext } from "../general/context";
 import {
@@ -10,42 +10,76 @@ import {
 } from "../redux/actions/navbar-events";
 import {
   Container,
-  HomeBtn,
+  IconBtn,
   NavigationSection,
   ButtonNav,
+  HomeBurgerLine,
+  MobileMenu,
+  MenuButton,
+  ContainerMobile,
 } from "../styles/navbar-style";
 import { IoHome } from "react-icons/io5";
+import { ImMenu3, ImMenu4 } from "react-icons/im";
 
 const Navbar: FC = (): JSX.Element => {
   const { isBigScreen, isTabletOrMobile } = useContext(ResponsiveContext);
   const dispatch = useDispatch();
+  const [isMenu, setIsMenu] = useState<boolean>(false);
 
   const setHomeHandler = () => {
     dispatch(SET_HOME());
+    setIsMenu(false);
   };
   const setWorkExperienceHandler = () => {
     dispatch(SET_WORKEXPERIENCE());
+    setIsMenu(false);
   };
   const setEducationHandler = () => {
     dispatch(SET_EDUCATION());
+    setIsMenu(false);
   };
   const setSkillsHandler = () => {
     dispatch(SET_SKILLS());
+    setIsMenu(false);
   };
   const setContactHandler = () => {
     dispatch(SET_CONTACT());
+    setIsMenu(false);
   };
 
   const mobileComponent = (): JSX.Element => {
-    return <Container>small devics</Container>;
+    return (
+      <ContainerMobile>
+        <HomeBurgerLine>
+          <IconBtn onClick={() => setHomeHandler()}>
+            <IoHome />
+          </IconBtn>
+          <IconBtn onClick={() => setIsMenu(!isMenu)}>
+            {isMenu ? <ImMenu4 /> : <ImMenu3 />}
+          </IconBtn>
+        </HomeBurgerLine>
+        {isMenu && (
+          <MobileMenu>
+            <MenuButton onClick={() => setWorkExperienceHandler()}>
+              Work Experience
+            </MenuButton>
+            <MenuButton onClick={() => setEducationHandler()}>
+              Education
+            </MenuButton>
+            <MenuButton onClick={() => setSkillsHandler()}>Skills</MenuButton>
+            <MenuButton onClick={() => setContactHandler()}>Contact</MenuButton>
+          </MobileMenu>
+        )}
+      </ContainerMobile>
+    );
   };
 
   const bigScreenComponent = (): JSX.Element => {
     return (
       <Container>
-        <HomeBtn onClick={() => setHomeHandler()}>
+        <IconBtn onClick={() => setHomeHandler()}>
           <IoHome />
-        </HomeBtn>
+        </IconBtn>
         <NavigationSection>
           <ButtonNav onClick={() => setWorkExperienceHandler()}>
             Work Experience
