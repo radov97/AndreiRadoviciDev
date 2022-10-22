@@ -20,6 +20,15 @@ const MainPage: FC = (): JSX.Element => {
   return (
     <Page>
       <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
+      <h1>{`Navbar state: ${navbarState}`}</h1>
       <button onClick={() => dispatch(SET_CONTACT())}>State</button>
       <button onClick={() => dispatch(SET_EDUCATION())}>State</button>
     </Page>
