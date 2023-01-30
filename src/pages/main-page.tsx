@@ -17,6 +17,7 @@ const MainPage: FC = (): JSX.Element => {
     console.log(navbarState);
   }, [dispatch, navbarState]);
 
+  // Comment test
   return (
     <Page>
       <h1>{`Navbar state: ${navbarState}`}</h1>
