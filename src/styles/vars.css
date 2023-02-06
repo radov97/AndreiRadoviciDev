@@ -1,0 +1,14 @@
+
+:root {
+    /* Colours */
+  --imperial-red: #e63946;
+  --honey-dew: #f1faee;
+  --powder-blue: #a8dadc;
+  --celadon-blue: #457b9d;
+  --prussian-blue: #1d3557;
+  --white: #FFF;
+  --black: #000;
+    /* Break points */
+  --tablet-breakpoint: 1224px;
+  --desktop-breakpoint: 1225px;
+}

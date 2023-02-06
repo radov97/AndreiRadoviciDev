@@ -1,0 +1,29 @@
+@import './vars.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  flex-grow: 0;
+}
+
+.body {
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.children {
+  flex-grow: 1;
+  background-color: var(--celadon-blue);
+  color: var(--white);
+}
+
+.footer {
+  flex-grow: 0;
+}
