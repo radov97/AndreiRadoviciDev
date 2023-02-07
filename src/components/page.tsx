@@ -2,7 +2,7 @@ import { FC } from "react";
 import { IChildrenProp } from "../general/interfaces";
 import Footer from "./footer";
 import Navbar from "./navbar";
-import styles from "./../styles/page.module.css";
+import styles from "./../styles/components/page.module.css";
 
 const Page: FC<IChildrenProp> = ({ children }): JSX.Element => (
   <div className={styles.container}>

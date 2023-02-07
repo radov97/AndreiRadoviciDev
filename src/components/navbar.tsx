@@ -10,7 +10,7 @@ import {
 } from "../redux/actions/navbar-events";
 import { IoHome } from "react-icons/io5";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
-import styles from "./../styles/navbar.module.css";
+import styles from "./../styles/components/navbar.module.css";
 
 const Navbar: FC = (): JSX.Element => {
   const { isBigScreen, isTabletOrMobile } = useContext(ResponsiveContext);
