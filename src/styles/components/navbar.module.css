@@ -16,7 +16,7 @@
   cursor: pointer;
   outline: inherit;
   border: none;
-  padding: 6px 18px;
+  padding: var(--spacing-xs) var(--spacing-m);
   color: var(--white);
   font-size: 30px;
   background-color: var(--accent-accessible);
@@ -46,7 +46,7 @@
     cursor: pointer;
     outline: inherit;
     border: none;
-    padding: 6px 18px;
+    padding: var(--spacing-xs) var(--spacing-m);
     color: var(--white);
     letter-spacing: 0.7px;
     font-size: 30px;
@@ -58,7 +58,7 @@
 
 .buttonNav:hover {
     background-color: var(--accent);
-    padding: 6px 40px;
+    padding: var(--spacing-xs) var(--spacing-xxl);
 }
 
 .buttonNav:active {
@@ -96,7 +96,7 @@
   cursor: pointer;
   outline: inherit;
   border: none;
-  padding: 6px 18px;
+  padding: var(--spacing-xs) var(--spacing-m);
   color: var(--white);
   font-size: 30px;
   background-color: var(--accent-accessible);

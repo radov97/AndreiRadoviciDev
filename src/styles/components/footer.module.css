@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  padding: var(--spacing-m) 0;
 }
 
 .centerContainer {
@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 20px;
+  padding: 0 var(--spacing-m);
 }
 
 .socialMediaWrapper {
@@ -24,8 +24,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: var(--spacing-s);
+  margin-bottom: var(--spacing-s);
 }
 
 .copyright {
@@ -37,7 +37,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: var(--spacing-xxs);
 }
 
 

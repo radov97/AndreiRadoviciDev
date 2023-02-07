@@ -62,4 +62,13 @@
   --charts-violet-a: #8e9fdb;
   --charts-yellow-b: #efd77b;
   --charts-pink-b: #d498c4;
+  
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 40px;
 }
