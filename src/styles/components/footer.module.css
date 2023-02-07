@@ -3,7 +3,7 @@
 .container {
   height: auto;
   min-height: 100px;
-  background-color: var(--prussian-blue);
+  background-color: var(--primary-100);
   color: var(--white);
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   height: 50px;
-  background-color: var(--imperial-red);
+  background-color: var(--accent-accessible);
 }
 
 .iconBtn {
@@ -19,17 +19,17 @@
   padding: 6px 18px;
   color: var(--white);
   font-size: 30px;
-  background-color: var(--imperial-red);
+  background-color: var(--accent-accessible);
   transition: all .3s;
   filter: none;
 }
 
 .iconBtn:hover {
-    filter: brightness(80%);
+  background-color: var(--accent);
 }
 
 .iconBtn:active {
-    filter: invert(80%);
+  background-color: var(--accent-35);
 }
 
 .navigationSection {
@@ -50,19 +50,19 @@
     color: var(--white);
     letter-spacing: 0.7px;
     font-size: 30px;
-    background-color: var(--imperial-red);
+    background-color: var(--accent-accessible);
     font-weight: bold;
     transition: all .3s;
     filter: none;
 }
 
 .buttonNav:hover {
-    filter: brightness(80%);
+    background-color: var(--accent);
     padding: 6px 40px;
 }
 
 .buttonNav:active {
-    filter: invert(80%);
+  background-color: var(--accent-35);
 }
 
 .containerMobile {
@@ -70,7 +70,7 @@
   flex-direction: column;
   height: auto;
   min-height: 50px;
-  background-color: var(--imperial-red);
+  background-color: var(--accent-accessible);
   transition: all .3s;
 }
 
@@ -83,7 +83,7 @@
 
 .mobileMenu {
   height: 200px;
-  background-color: var(--imperial-red);
+  background-color: var(--accent-accessible);
   display: flex;
   flex-direction: column;
   justify-content: flex;
@@ -99,7 +99,7 @@
   padding: 6px 18px;
   color: var(--white);
   font-size: 30px;
-  background-color: var(--imperial-red);
+  background-color: var(--accent-accessible);
   transition: all .3s;
   filter: none;
   height: 50px;
@@ -108,10 +108,10 @@
 }
 
 .menuButton:hover {
-    filter: brightness(200%);
+  background-color: var(--accent);
 }
 
 .menuButton:active {
-    filter: invert(100%);
+  background-color: var(--accent-35);
 }
 

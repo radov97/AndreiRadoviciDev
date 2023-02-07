@@ -1,14 +1,65 @@
 
 :root {
-    /* Colours */
-  --imperial-red: #e63946;
-  --honey-dew: #f1faee;
-  --powder-blue: #a8dadc;
-  --celadon-blue: #457b9d;
-  --prussian-blue: #1d3557;
-  --white: #FFF;
-  --black: #000;
-    /* Break points */
+  /* Break points */
   --tablet-breakpoint: 1224px;
   --desktop-breakpoint: 1225px;
+  /* Zeplin colours */
+  --primary-100: #0d334a;
+  --primary-50: rgba(13, 51, 74, 0.5);
+  --primary-12: rgba(13, 51, 74, 0.12);
+  --primary-9: rgba(13, 51, 74, 0.09);
+  --primary-3: rgba(13, 51, 74, 0.03);
+  --accent: #e8636b;
+  --accent-35: rgba(232, 99, 107, 0.35);
+  --accent-9: rgba(232, 99, 107, 0.09);
+  --accent-6: rgba(232, 99, 107, 0.06);
+  --accent-accessible: #cb343d;
+  --warmgray-100: #e7e4dc;
+  --warmgray-50: #f3f1ed;
+  --warmgray-35: #f7f6f3;
+  --warmgray-15: #fbfbfa;
+  --darkgray: #5c6062;
+  --lightgray: #dadada;
+  --message: #da8505;
+  --message-12: rgba(218, 133, 5, 0.12);
+  --message-9: rgba(218, 133, 5, 0.09);
+  --error: #f10f01;
+  --error-12: rgba(241, 15, 1, 0.12);
+  --error-9: rgba(241, 15, 1, 0.09);
+  --success: #71af07;
+  --success-12: rgba(113, 175, 7, 0.12);
+  --success-9: rgba(113, 175, 7, 0.09);
+  --info: #369ee4;
+  --info-12: rgba(54, 158, 228, 0.12);
+  --info-9: rgba(54, 158, 228, 0.09);
+  --black: #000;
+  --black-87: rgba(0, 0, 0, 0.87);
+  --black-54: rgba(0, 0, 0, 0.54);
+  --black-38: rgba(0, 0, 0, 0.38);
+  --black-24: rgba(0, 0, 0, 0.24);
+  --black-12: rgba(0, 0, 0, 0.12);
+  --white: #fff;
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-24: rgba(255, 255, 255, 0.24);
+  --white-12: rgba(255, 255, 255, 0.12);
+  --white-6: rgba(255, 255, 255, 0.06);
+  --button-1-focus: #081e2b;
+  --button-1-hover: #274150;
+  --button-2-focus: #cbc9c2;
+  --button-2-hover: #edeae4;
+  --button-3-hover: rgba(39, 65, 80, 0.06);
+  --button-3-focus: rgba(8, 30, 43, 0.12);
+  --charts-red-a: #cf4545;
+  --charts-teal-a: #3b7e93;
+  --charts-red-b: #f5825c;
+  --charts-teal-b: #7bc9cd;
+  --charts-green-b: #00ce92;
+  --charts-violet-b: #b8c5f1;
+  --charts-yellow-a: #f1d04f;
+  --charts-green-a: #1d9c68;
+  --charts-pink-a: #d066b2;
+  --charts-violet-a: #8e9fdb;
+  --charts-yellow-b: #efd77b;
+  --charts-pink-b: #d498c4;
 }
