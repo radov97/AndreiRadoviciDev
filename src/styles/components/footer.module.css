@@ -28,6 +28,19 @@
   margin-bottom: var(--spacing-s);
 }
 
+.socialIcon {
+  transition: all .3s;
+}
+
+.socialIcon:hover {
+  filter: brightness(150%);
+  margin: 0 var(--spacing-m);
+}
+
+.socialIcon:active {
+  filter: brightness(60%);
+}
+
 .copyright {
   font-size: 18px;
   letter-spacing: 0.67px;

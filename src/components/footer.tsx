@@ -10,19 +10,27 @@ const Footer: FC = (): JSX.Element => (
         <SocialIcon
           url="https://www.facebook.com/andrei.rdv.5"
           fgColor={"white"}
+          className={styles.socialIcon}
         />
         <SocialIcon
           url="https://www.linkedin.com/in/andrei-radovici-386a6517a/"
           fgColor={"white"}
+          className={styles.socialIcon}
         />
-        <SocialIcon url="https://github.com/radov97" fgColor={"white"} />
+        <SocialIcon
+          url="https://github.com/radov97"
+          fgColor={"white"}
+          className={styles.socialIcon}
+        />
         <SocialIcon
           url="https://www.instagram.com/andrei_radovici/"
           fgColor={"white"}
+          className={styles.socialIcon}
         />
         <SocialIcon
           fgColor={"white"}
           url="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVVxPgFhGwTrLVsMdqdKjsVJjCZhSjVcrrktSTNxvdQkXDGrpvFfrHHTjFLTGclRvkJjNx"
+          className={styles.socialIcon}
         />
       </div>
       <div className={styles.copyright}>
