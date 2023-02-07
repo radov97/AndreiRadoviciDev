@@ -1,4 +1,4 @@
-@import './../vars.css';
+@import "./../vars.css";
 
 .container {
   height: auto;
@@ -29,7 +29,7 @@
 }
 
 .socialIcon {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .socialIcon:hover {
@@ -52,7 +52,3 @@
   justify-content: center;
   gap: var(--spacing-xxs);
 }
-
-
-
-  
