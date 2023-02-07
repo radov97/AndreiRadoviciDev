@@ -2,7 +2,7 @@ import { FC } from "react";
 import { TypographyProps } from "../general/interfaces";
 import styles from "./../styles/components/typography.module.css";
 
-const Page: FC<TypographyProps> = ({
+const Typography: FC<TypographyProps> = ({
   text,
   appearance = "value600",
   className,
@@ -13,4 +13,4 @@ const Page: FC<TypographyProps> = ({
   </div>
 );
 
-export default Page;
+export default Typography;
