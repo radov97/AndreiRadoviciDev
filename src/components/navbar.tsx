@@ -8,18 +8,9 @@ import {
   SET_SKILLS,
   SET_CONTACT,
 } from "../redux/actions/navbar-events";
-import {
-  Container,
-  IconBtn,
-  NavigationSection,
-  ButtonNav,
-  HomeBurgerLine,
-  MobileMenu,
-  MenuButton,
-  ContainerMobile,
-} from "../styles/navbar-style";
 import { IoHome } from "react-icons/io5";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
+import styles from "./../styles/navbar.module.css";
 
 const Navbar: FC = (): JSX.Element => {
   const { isBigScreen, isTabletOrMobile } = useContext(ResponsiveContext);
@@ -49,46 +40,80 @@ const Navbar: FC = (): JSX.Element => {
 
   const mobileComponent = (): JSX.Element => {
     return (
-      <ContainerMobile>
-        <HomeBurgerLine>
-          <IconBtn onClick={() => setHomeHandler()}>
+      <div className={styles.containerMobile}>
+        <div className={styles.homeBurgerLine}>
+          <button className={styles.iconBtn} onClick={() => setHomeHandler()}>
             <IoHome />
-          </IconBtn>
-          <IconBtn onClick={() => setIsMenu(!isMenu)}>
+          </button>
+          <button className={styles.iconBtn} onClick={() => setIsMenu(!isMenu)}>
             {isMenu ? <ImMenu4 /> : <ImMenu3 />}
-          </IconBtn>
-        </HomeBurgerLine>
+          </button>
+        </div>
         {isMenu && (
-          <MobileMenu>
-            <MenuButton onClick={() => setWorkExperienceHandler()}>
+          <div className={styles.mobileMenu}>
+            <button
+              className={styles.menuButton}
+              onClick={() => setWorkExperienceHandler()}
+            >
               Work Experience
-            </MenuButton>
-            <MenuButton onClick={() => setEducationHandler()}>
+            </button>
+            <button
+              className={styles.menuButton}
+              onClick={() => setEducationHandler()}
+            >
               Education
-            </MenuButton>
-            <MenuButton onClick={() => setSkillsHandler()}>Skills</MenuButton>
-            <MenuButton onClick={() => setContactHandler()}>Contact</MenuButton>
-          </MobileMenu>
+            </button>
+            <button
+              className={styles.menuButton}
+              onClick={() => setSkillsHandler()}
+            >
+              Skills
+            </button>
+            <button
+              className={styles.menuButton}
+              onClick={() => setContactHandler()}
+            >
+              Contact
+            </button>
+          </div>
         )}
-      </ContainerMobile>
+      </div>
     );
   };
 
   const bigScreenComponent = (): JSX.Element => {
     return (
-      <Container>
-        <IconBtn onClick={() => setHomeHandler()}>
+      <div className={styles.container}>
+        <button className={styles.iconBtn} onClick={() => setHomeHandler()}>
           <IoHome />
-        </IconBtn>
-        <NavigationSection>
-          <ButtonNav onClick={() => setWorkExperienceHandler()}>
+        </button>
+        <div className={styles.navigationSection}>
+          <button
+            className={styles.buttonNav}
+            onClick={() => setWorkExperienceHandler()}
+          >
             Work Experience
-          </ButtonNav>
-          <ButtonNav onClick={() => setEducationHandler()}>Education</ButtonNav>
-          <ButtonNav onClick={() => setSkillsHandler()}>Skills</ButtonNav>
-          <ButtonNav onClick={() => setContactHandler()}>Contact</ButtonNav>
-        </NavigationSection>
-      </Container>
+          </button>
+          <button
+            className={styles.buttonNav}
+            onClick={() => setEducationHandler()}
+          >
+            Education
+          </button>
+          <button
+            className={styles.buttonNav}
+            onClick={() => setSkillsHandler()}
+          >
+            Skills
+          </button>
+          <button
+            className={styles.buttonNav}
+            onClick={() => setContactHandler()}
+          >
+            Contact
+          </button>
+        </div>
+      </div>
     );
   };
 

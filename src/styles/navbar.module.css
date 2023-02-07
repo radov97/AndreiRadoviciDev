@@ -1,0 +1,117 @@
+@import './vars.css';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  background-color: var(--imperial-red);
+}
+
+.iconBtn {
+  flex-grow: 0;
+  height: 100%;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  padding: 6px 18px;
+  color: var(--white);
+  font-size: 30px;
+  background-color: var(--imperial-red);
+  transition: all .3s;
+  filter: none;
+}
+
+.iconBtn:hover {
+    filter: brightness(80%);
+}
+
+.iconBtn:active {
+    filter: invert(80%);
+}
+
+.navigationSection {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.buttonNav {
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    padding: 6px 18px;
+    color: var(--white);
+    letter-spacing: 0.7px;
+    font-size: 30px;
+    background-color: var(--imperial-red);
+    font-weight: bold;
+    transition: all .3s;
+    filter: none;
+}
+
+.buttonNav:hover {
+    filter: brightness(80%);
+    padding: 6px 40px;
+}
+
+.buttonNav:active {
+    filter: invert(80%);
+}
+
+.containerMobile {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 50px;
+  background-color: var(--imperial-red);
+  transition: all .3s;
+}
+
+.homeBurgerLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.mobileMenu {
+  height: 200px;
+  background-color: var(--imperial-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: flex-end;
+}
+
+.menuButton {
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  padding: 6px 18px;
+  color: var(--white);
+  font-size: 30px;
+  background-color: var(--imperial-red);
+  transition: all .3s;
+  filter: none;
+  height: 50px;
+  width: auto;
+  text-align: right;
+}
+
+.menuButton:hover {
+    filter: brightness(200%);
+}
+
+.menuButton:active {
+    filter: invert(100%);
+}
+
