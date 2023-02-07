@@ -2,12 +2,12 @@ import React, { FC } from "react";
 import { useMediaQuery } from "react-responsive";
 import { ResponsiveContext } from "../general/context";
 import { IChildrenProp, IResponsiveContext } from "../general/interfaces";
-import { desktopBreakpoint, tabletBreakpoint } from "../styles/vars";
+import { desktopBreakpoint, tabletBreakpoint } from "../helpers/breakpoints";
 
 const ReponsiveProvider: FC<IChildrenProp> = ({ children }) => {
   const providerValue: IResponsiveContext = {
-    isBigScreen: useMediaQuery({ 
-        query: `(min-width: ${desktopBreakpoint})` 
+    isBigScreen: useMediaQuery({
+      query: `(min-width: ${desktopBreakpoint})`,
     }),
     isTabletOrMobile: useMediaQuery({
       query: `(max-width: ${tabletBreakpoint})`,
